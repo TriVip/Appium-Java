@@ -1,4 +1,4 @@
-package labs.lab8.lab8_1;
+package labs.lab9.lab9_1;
 
 public class Animal {
     protected String name;

@@ -1,4 +1,4 @@
-package labs.lab8.lab8_1;
+package labs.lab9.lab9_1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,13 +16,15 @@ public class AnimalController {
     }
 
     public List<Animal> getEligibleRacingAnimal(List<Animal> animalList){
-        List<Animal> eligileAnimal = new ArrayList<>();
-        for (Animal animal : eligileAnimal) {
+        List<Animal> eligibleAnimals = new ArrayList<>(animalList);
+        List applicableAnimals = new ArrayList();
+
+        for (Animal animal : eligibleAnimals) {
             if(!animal.isFlyable()){
-                eligileAnimal.add(animal);
+                applicableAnimals.add(animal);
             }
         }
-        return eligileAnimal;
+        return eligibleAnimals;
     }
 
 }
